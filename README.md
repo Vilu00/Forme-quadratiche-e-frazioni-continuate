@@ -12,3 +12,10 @@ Viceversa:
 Given a continued fractions, alpha=[preperiod, \overline{period}], (the inputs are exaclty preperiod, which could be empty, and period.
 called gamma=[\overline{period}] , it returns the irrational quadratic equivalent of gamma, and its relative polynomial.
 Also returns the irrational quadratic equivalent of alpha. 
+
+In this File there are also functions that given period and preperiod return the convergents 
+In particular from_convergentsnumb_to_continued_fraction(convergents), given a list of convergents (as numbers), reconstructs the continued fraction representation, 
+while from_convergentsstring_to_continued_fraction(convergents) does the same, but starting from a string, so in particular it must be something of the type "1/2", "3/4", etc...
+Viceversa 
+"Construct_convergentnth_from_continued_fraction(preperiod, period, n)" constructs the n-th convergent of the continued fraction with given preperiod and period, 
+while  "Construct_convergentslist_from_continued_fraction(preperiod, period,n)" constructs the first n-th convergents, so it gives n+1 numbers, since it includes the 0-th convergent.
